@@ -1,0 +1,62 @@
+body{
+	background-color: lightgrey;
+	margin: 0;
+}
+
+#wrap{
+	padding: 50px; 
+}
+
+#grid{
+	height: 540px;
+	width: 540px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    float: left;
+}
+
+#numbers{
+	width: 60px;
+	height: 600px;
+	background-color: white;
+	float: left;
+	margin:-15px 00px 00px 70px;
+	display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.blue{
+	background-color: #00ffff;
+	color: black;
+    text-align: center;
+    height: 180px;
+    width: 180px;
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.darkblue{
+	background-color: #00d2d2;
+	color: black;
+    text-align: center;
+    height: 180px;
+    width: 180px;
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.button{
+	background-color: transparent;
+}
+
+.numberButton{
+	background-color: transparent;
+	font-weight: bold;
+	font-size: 18px;
+	color: black;
+}
