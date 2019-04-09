@@ -5,12 +5,24 @@
 	<script type="text/javascript" src="js/sudoku.js"></script>
 </head>
 <body>
-
 	<div id="wrap">
-
+		<button onclick="print()">console Print</button>
 		<div id="grid">
 
-			<div class="blue" id="g1">
+			<div class="blue" id="g0">
+				<button class="button" id="g00" onclick="buttonClick(this.id)"></button>
+				<button class="button" id="g01" onclick="buttonClick(this.id)"></button>
+				<button class="button" id="g02" onclick="buttonClick(this.id)"></button>
+				<button class="button" id="g03" onclick="buttonClick(this.id)"></button>
+				<button class="button" id="g04" onclick="buttonClick(this.id)"></button>
+				<button class="button" id="g05" onclick="buttonClick(this.id)"></button>
+				<button class="button" id="g06" onclick="buttonClick(this.id)"></button>
+				<button class="button" id="g07" onclick="buttonClick(this.id)"></button>
+				<button class="button" id="g08" onclick="buttonClick(this.id)"></button>
+			</div>
+
+			<div class="darkblue" id="g1">
+				<button class="button" id="g10" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g11" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g12" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g13" onclick="buttonClick(this.id)"></button>
@@ -19,10 +31,10 @@
 				<button class="button" id="g16" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g17" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g18" onclick="buttonClick(this.id)"></button>
-				<button class="button" id="g19" onclick="buttonClick(this.id)"></button>
 			</div>
 
-			<div class="darkblue" id="g2">
+			<div class="blue" id="g2">
+				<button class="button" id="g20" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g21" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g22" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g23" onclick="buttonClick(this.id)"></button>
@@ -31,10 +43,10 @@
 				<button class="button" id="g26" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g27" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g28" onclick="buttonClick(this.id)"></button>
-				<button class="button" id="g29" onclick="buttonClick(this.id)"></button>
 			</div>
 
-			<div class="blue" id="g3">
+			<div class="darkblue" id="g3">
+				<button class="button" id="g30" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g31" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g32" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g33" onclick="buttonClick(this.id)"></button>
@@ -43,10 +55,10 @@
 				<button class="button" id="g36" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g37" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g38" onclick="buttonClick(this.id)"></button>
-				<button class="button" id="g39" onclick="buttonClick(this.id)"></button>
 			</div>
 
-			<div class="darkblue" id="g4">
+			<div class="blue" id="g4">
+				<button class="button" id="g40" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g41" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g42" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g43" onclick="buttonClick(this.id)"></button>
@@ -55,10 +67,10 @@
 				<button class="button" id="g46" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g47" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g48" onclick="buttonClick(this.id)"></button>
-				<button class="button" id="g49" onclick="buttonClick(this.id)"></button>
 			</div>
 
-			<div class="blue" id="g5">
+			<div class="darkblue" id="g5">
+				<button class="button" id="g50" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g51" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g52" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g53" onclick="buttonClick(this.id)"></button>
@@ -67,10 +79,10 @@
 				<button class="button" id="g56" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g57" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g58" onclick="buttonClick(this.id)"></button>
-				<button class="button" id="g59" onclick="buttonClick(this.id)"></button>
 			</div>
-
-			<div class="darkblue" id="g6">
+			
+			<div class="blue" id="g6">
+				<button class="button" id="g60" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g61" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g62" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g63" onclick="buttonClick(this.id)"></button>
@@ -79,10 +91,10 @@
 				<button class="button" id="g66" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g67" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g68" onclick="buttonClick(this.id)"></button>
-				<button class="button" id="g69" onclick="buttonClick(this.id)"></button>
 			</div>
-			
-			<div class="blue" id="g7">
+
+			<div class="darkblue" id="g7">
+				<button class="button" id="g70" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g71" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g72" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g73" onclick="buttonClick(this.id)"></button>
@@ -91,10 +103,10 @@
 				<button class="button" id="g76" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g77" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g78" onclick="buttonClick(this.id)"></button>
-				<button class="button" id="g79" onclick="buttonClick(this.id)"></button>
 			</div>
 
-			<div class="darkblue" id="g8">
+			<div class="blue" id="g8">
+				<button class="button" id="g80" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g81" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g82" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g83" onclick="buttonClick(this.id)"></button>
@@ -103,19 +115,6 @@
 				<button class="button" id="g86" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g87" onclick="buttonClick(this.id)"></button>
 				<button class="button" id="g88" onclick="buttonClick(this.id)"></button>
-				<button class="button" id="g89" onclick="buttonClick(this.id)"></button>
-			</div>
-
-			<div class="blue" id="g9">
-				<button class="button" id="g91" onclick="buttonClick(this.id)"></button>
-				<button class="button" id="g92" onclick="buttonClick(this.id)"></button>
-				<button class="button" id="g93" onclick="buttonClick(this.id)"></button>
-				<button class="button" id="g94" onclick="buttonClick(this.id)"></button>
-				<button class="button" id="g95" onclick="buttonClick(this.id)"></button>
-				<button class="button" id="g96" onclick="buttonClick(this.id)"></button>
-				<button class="button" id="g97" onclick="buttonClick(this.id)"></button>
-				<button class="button" id="g98" onclick="buttonClick(this.id)"></button>
-				<button class="button" id="g99" onclick="buttonClick(this.id)"></button>
 			</div>
 
 		</div>
@@ -133,8 +132,12 @@
 			<button class="numberButton" id="9" onclick="numberPick(this.id)">9</button>
 		</div>
 
-		<div id="others">
-			
+		<div class="clear">
+			<button id="clearButton" onclick="location.reload()">Clear All</button>	
+		</div>
+		
+		<div class="submit">
+			<button id="submitButton" onclick="submit()">Submit</button>
 		</div>
 
 	</div>
