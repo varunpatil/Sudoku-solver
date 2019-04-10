@@ -1,11 +1,8 @@
 body{
-	background-color: #d3d3d3;
+	background-color: #eeeeee;
 	margin: 0;
-}
-
-#wrap{
-	padding: 40px;
-	padding-left: 200px;
+	padding-top: 4%;
+	padding-left: 28%;
 }
 
 #grid{
@@ -27,6 +24,41 @@ body{
 	margin:-15px 00px 00px 50px;
 	display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.clear{
+	width: 131px;
+	height: 60px;
+	float: bottom;
+}
+
+.submit{
+	width: 131px;
+	height: 60px;
+	float: bottom;
+}
+
+#clearButton{
+	margin-top: -20px;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #d9d9d9;
+	color: black;
+	width: 131px;
+	height: 60px;
+	text-decoration: none;
+}
+
+#submitButton{
+	margin-top: -20px;
+	margin-left: 420px;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #d9d9d9;
+	color: black;
+	width: 131px;
+	height: 60px;
+	text-decoration: none;
 }
 
 
@@ -81,34 +113,4 @@ body{
 	color: white;
 	border-width:1;
 	padding:0;
-}
-
-.clear{
-
-}
-
-.submit{
-
-}
-
-#clearButton{
-	display: inline-block;
-	font-size: 25px;
-	font-weight: bold;
-	background-color: #c3c3c3;
-	color: black;
-	width: 131px;
-	height: 60px;
-	text-decoration: none;
-}
-
-#submitButton{
-	display: inline-block;
-	font-size: 25px;
-	font-weight: bold;
-	background-color: #c3c3c3;
-	color: black;
-	width: 131px;
-	height: 60px;
-	text-decoration: none;
 }
