@@ -32,8 +32,15 @@ body{
 	float: bottom;
 }
 
-.submit{
+.label{
 	width: 131px;
+	height: 60px;
+	float: bottom;
+	background-color: white;
+}
+
+.submit{
+	width: 191px;
 	height: 60px;
 	float: bottom;
 }
@@ -45,6 +52,19 @@ body{
 	background-color: #d9d9d9;
 	color: black;
 	width: 131px;
+	height: 60px;
+	text-decoration: none;
+}
+
+#label{
+	margin-top: -20px;
+	margin-left: 153px;
+	text-align: center;
+	font-size: 25px;
+	font-family: Arial;
+	font-weight: bold;
+	color: black;
+	width: 250px;
 	height: 60px;
 	text-decoration: none;
 }
@@ -85,6 +105,24 @@ body{
 }
 
 .button{
+	background-color: transparent;
+	font-weight: normal;
+	font-size: 40px;
+	color: black;
+	border-width:2;
+	padding:0;
+}
+
+.button.red{
+	background-color: transparent;
+	font-weight: 900;
+	font-size: 40px;
+	color: red;
+	border-width:2;
+	padding:0;
+}
+
+.button.bold{
 	background-color: transparent;
 	font-weight: bold;
 	font-size: 40px;
