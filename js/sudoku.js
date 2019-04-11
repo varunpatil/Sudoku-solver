@@ -1,8 +1,6 @@
 var pickedNumber='0';
 var checker=0;
 
-var rowp=0,colp=0;
-
 var grid = [
 [0,0,0,0,0,0,0,0,0],
 [0,0,0,0,0,0,0,0,0],
@@ -112,6 +110,7 @@ var CheckGrid = function()
 			if(grid[i][j]!=0)
 			{
 				var number = grid[i][j];
+				grid[i][j]=0;
 
 				if(IsSafe(i,j,number))
 				{
@@ -128,43 +127,47 @@ var CheckGrid = function()
 	}
 }
 
-var FindUnassignedLocation = function(row,col)
-{	
-	/* Searches the grid to find an entry that is still unassigned. If
-   found, the reference parameters row, col will be set the location
-   that is unassigned, and true is returned. If no unassigned entries
-   remain, false is returned. */
-
-    for (row = 0; row < 9; row++)
-        for (col = 0; col < 9; col++)
-            if (grid[row][col] == 0)
-                return true;
-    return false;
-}
-
 var SolveSudoku = function()
 {
 	/* Takes a partially filled-in grid and attempts to assign values to
   all unassigned locations in such a way to meet the requirements
   for Sudoku solution (non-duplication across rows, columns, and boxes) */
 
-  if(!FindUnassignedLocation(rowp,colp))
-  	return true;
+  	var row=0,col=0,unassFound=0;
+	fors :
+	{
+	    for (row = 0; row < 9; row++)
+	    {
+	        for (col = 0; col < 9; col++)
+	        {
+	            if (grid[row][col] == 0)
+		            {
+		            	unassFound=1;
+		            	break fors;
+		            }
+	        }
+	    }
+	}
 
-  for (var num = 1; num <= 9; num++)
+	if(unassFound==0)
+	{
+		return true;
+	}
+
+    for (var num = 1; num <= 9; num++)
     {
         // if looks promising
-        if (IsSafe(rowp, colp, num))
+        if (IsSafe(row, col, num))
         {
             // make tentative assignment
-            grid[rowp][colp] = num;
+            grid[row][col] = num;
 
             // return, if success, yay!
             if (SolveSudoku())
                 return true;
 
             // failure, unmake & try again
-            grid[rowp][colp] = 0;
+            grid[row][col] = 0;
         }
     }
     return false;
@@ -211,4 +214,30 @@ var submit = function()
 	{
 		document.getElementById("label").innerText='INVALID SUDOKU';
 	}
+}
+
+var clearAll = function()
+{
+	document.getElementById("label").innerText='';
+
+	for(var i=0;i<9;i++)
+	{
+		for(var j=0;j<9;j++)
+		{
+			document.getElementById('g'+String(i)+String(j)).className ='button';
+			document.getElementById('g'+String(i)+String(j)).innerText="";
+			grid[i][j]=0;
+		}
+	}
+	pickedNumber='0';
+	document.getElementById('1').className ='numberButton';
+	document.getElementById('2').className ='numberButton';
+	document.getElementById('3').className ='numberButton';
+	document.getElementById('4').className ='numberButton';
+	document.getElementById('5').className ='numberButton';
+	document.getElementById('6').className ='numberButton';
+	document.getElementById('7').className ='numberButton';
+	document.getElementById('8').className ='numberButton';
+	document.getElementById('9').className ='numberButton';
+	document.getElementById('clear').className ='numberButton';
 }

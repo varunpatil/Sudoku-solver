@@ -26,7 +26,7 @@ body{
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-.clear{
+.Clear{
 	width: 131px;
 	height: 60px;
 	float: bottom;
@@ -124,7 +124,7 @@ body{
 
 .button.bold{
 	background-color: transparent;
-	font-weight: bold;
+	font-weight: 900;
 	font-size: 40px;
 	color: black;
 	border-width:2;
@@ -151,4 +151,19 @@ body{
 	color: white;
 	border-width:1;
 	padding:0;
+}
+
+.gitlink{
+	position:relative;
+}
+
+#gitlink{
+	position: absolute;
+    bottom: -510px;
+    right: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-family: Arial;
+    font-weight: bold;
+    color: black;
 }
