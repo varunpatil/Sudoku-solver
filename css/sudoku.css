@@ -1,0 +1,169 @@
+body{
+	background-color: #eeeeee;
+	margin: 0;
+	padding-top: 4%;
+	padding-left: 28%;
+}
+
+#grid{
+	height: 540px;
+	width: 540px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    float: left;
+}
+
+#numbers{
+	width: 60px;
+	height: 600px;
+	background-color: white;
+	float: left;
+	margin:-15px 00px 00px 50px;
+	display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.Clear{
+	width: 131px;
+	height: 60px;
+	float: bottom;
+}
+
+.label{
+	width: 131px;
+	height: 60px;
+	float: bottom;
+	background-color: white;
+}
+
+.submit{
+	width: 191px;
+	height: 60px;
+	float: bottom;
+}
+
+#clearButton{
+	margin-top: -20px;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #d9d9d9;
+	color: black;
+	width: 131px;
+	height: 60px;
+	text-decoration: none;
+}
+
+#label{
+	margin-top: -20px;
+	margin-left: 153px;
+	text-align: center;
+	font-size: 25px;
+	font-family: Arial;
+	font-weight: bold;
+	color: black;
+	width: 250px;
+	height: 60px;
+	text-decoration: none;
+}
+
+#submitButton{
+	margin-top: -20px;
+	margin-left: 420px;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #d9d9d9;
+	color: black;
+	width: 131px;
+	height: 60px;
+	text-decoration: none;
+}
+
+
+.blue{
+	background-color: #00ffff;
+	color: black;
+    text-align: center;
+    height: 180px;
+    width: 180px;
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.darkblue{
+	background-color: #00d2d2;
+	color: black;
+    text-align: center;
+    height: 180px;
+    width: 180px;
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.button{
+	background-color: transparent;
+	font-weight: normal;
+	font-size: 40px;
+	color: black;
+	border-width:2;
+	padding:0;
+}
+
+.button.red{
+	background-color: transparent;
+	font-weight: 900;
+	font-size: 40px;
+	color: red;
+	border-width:2;
+	padding:0;
+}
+
+.button.bold{
+	background-color: transparent;
+	font-weight: 900;
+	font-size: 40px;
+	color: black;
+	border-width:2;
+	padding:0;
+}
+
+.numberButton{
+	background-color: transparent;
+	font-weight: bold;
+	font-size: 25px;
+	color: black;
+	border-width:1;
+	padding:0;
+}
+
+#clear{
+	font-size: 20px;
+}
+
+.numberButton.picked{
+	background-color: black;
+	font-weight: bold;
+	font-size: 25px;
+	color: white;
+	border-width:1;
+	padding:0;
+}
+
+.gitlink{
+	position:relative;
+}
+
+#gitlink{
+	position: absolute;
+    bottom: -510px;
+    right: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-family: Arial;
+    font-weight: bold;
+    color: black;
+}
